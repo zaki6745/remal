@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant Remal – Grillades et poisson à El Marsa</title>
+<meta name="description" content="Restaurant familial à El Marsa : grillades, brochettes et poisson frais. Sur place ou à emporter. Ouvert jusqu'à 00h30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--sea:#0e3b43;--sea2:#16535e;--sand:#d9c7a0;--foam:#f6f5f0;--sun:#e3a72f;--ink:#12292d;
+--h:"Bricolage Grotesque",Georgia,serif;--b:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 1.05rem/1.65 var(--b);color:var(--ink);background:var(--foam)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;z-index:5;background:var(--sea);color:var(--foam)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font:800 1.2rem var(--h)}
+nav div a{margin-left:1.25rem;text-decoration:none;font-weight:600;font-size:.95rem}
+nav div a:hover{color:var(--sun)}
+.hero{background:var(--sea);color:var(--foam);padding:5rem 0 6rem;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:46px;
+background:radial-gradient(circle at 25px 0,transparent 24px,var(--foam) 25px) 0 0/50px 46px repeat-x}
+.hero h1{font:800 clamp(4rem,15vw,9.5rem)/.9 var(--h);letter-spacing:-.03em;color:var(--sand)}
+.hero p{max-width:34ch;font-size:1.3rem;margin:1.5rem 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--sun)}
+.btn.main{background:var(--sun);color:var(--ink)}
+.btn.alt{color:var(--foam)}
+.btn:hover{transform:translateY(-2px)}
+.tags{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.5rem;font-size:.95rem}
+.tags span{background:var(--sea2);padding:.25rem .8rem;border-radius:999px}
+section{padding:4rem 0}
+h2{font:800 clamp(2rem,5vw,3rem)/1.1 var(--h);color:var(--sea);margin-bottom:1rem}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.25rem;margin-top:2rem}
+.menu article{padding:1.5rem;border-radius:18px 18px 18px 4px;background:#fff;border:1px solid #e3dccb}
+.menu article:nth-child(1){background:var(--sea);color:var(--foam)}
+.menu article:nth-child(1) h3{color:var(--sand)}
+.menu h3{font:800 1.4rem var(--h);margin-bottom:.4rem}
+.note{margin-top:1.25rem;font-size:.95rem;opacity:.75}
+.sand{background:var(--sand)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.rate{font:800 clamp(4rem,10vw,6rem)/1 var(--h);color:var(--sea)}
+blockquote{border-left:4px solid var(--sea);padding-left:1rem;margin-top:1rem;max-width:44ch}
+.info dl{display:grid;grid-template-columns:8rem 1fr;gap:.9rem 1rem;margin:1.5rem 0}
+.info dt{font-weight:600;color:var(--sea)}
+footer{background:var(--sea);color:var(--sand);padding:2rem 0;font-size:.9rem}
+@media(max-width:720px){.two{grid-template-columns:1fr;gap:1.5rem}.info dl{grid-template-columns:1fr;gap:.1rem}.info dd{margin-bottom:.8rem}nav div a:nth-child(n+3){display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Remal</b><div><a href="#menu">Menu</a><a href="#avis">Avis</a><a href="#infos">Venir</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Remal</h1>
+<p>Grillades et poisson pour toute la famille, à El Marsa.</p>
+<div class="btns">
+<a class="btn main" href="https://wa.me/213561641082" target="_blank" rel="noopener">Contact us</a>
+<a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=R734%2BCCF%20El%20Marsa" target="_blank" rel="noopener">Voir l'itinéraire</a>
+</div>
+<div class="tags"><span>Sur place</span><span>À emporter</span><span>Ouvert jusqu'à 00h30</span></div>
+</div></header>
+
+<section id="menu"><div class="wrap">
+<h2>À la carte</h2>
+<p>Du poisson, des brochettes et des accompagnements à partager.</p>
+<div class="menu">
+<article><h3>Poisson</h3><p>Daurade, sardines et poissons du jour, servis avec de nombreux accompagnements.</p></article>
+<article><h3>Grillades</h3><p>Brochettes et viandes grillées, la spécialité de la maison.</p></article>
+<article><h3>Salade verte</h3><p>Fraîche, pour commencer ou accompagner le grill.</p></article>
+<article><h3>Frites</h3><p>Le complément simple que toute la table réclame.</p></article>
+</div>
+<p class="note">Menu complet et prix : demandez-les au restaurant ou par téléphone.</p>
+</div></section>
+
+<section id="avis" class="sand"><div class="wrap two">
+<div><div class="rate">4,0</div><p>sur 5, d'après 63 avis Google</p></div>
+<div>
+<h2>Ce que disent les clients</h2>
+<blockquote>Cuisine savoureuse et de qualité, accueil chaleureux.</blockquote>
+<blockquote>Une table à l'étage pour profiter de la vue dégagée.</blockquote>
+</div>
+</div></section>
+
+<section id="infos" class="info"><div class="wrap">
+<h2>Venir chez Remal</h2>
+<dl>
+<dt>Adresse</dt><dd>Chemin de wilaya, El Marsa<br><small>Code Plus : R734+CCF</small></dd>
+<dt>Horaires</dt><dd>Ouvert tous les jours jusqu'à 00h30</dd>
+<dt>Téléphone</dt><dd><a href="tel:+213561641082">0561 64 10 82</a></dd>
+<dt>Budget</dt><dd>1 à 1 000 DA par personne</dd>
+<dt>Service</dt><dd>Repas sur place et vente à emporter</dd>
+</dl>
+<a class="btn main" href="https://wa.me/213561641082" target="_blank" rel="noopener">Contact us</a>
+</div></section>
+
+<footer><div class="wrap">Restaurant Remal · El Marsa, Alger</div></footer>
+</body>
+</html>
